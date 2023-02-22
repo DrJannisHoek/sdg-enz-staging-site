@@ -2772,6 +2772,14 @@ h1.header {
   color: #1d70b8 !important; }
 
 /*#2. goal page */
+.previous-next-links.row {
+  position: relative;
+  top: -170px;
+  left: 4vw; }
+
+.col-md-auto {
+  width: 25%; }
+
 /* goal-navigation-top */
 .goal-1 {
   /* main content for goals and indicators */ }
@@ -3485,8 +3493,8 @@ body.contrast-high .goal-banner img {
 .carousel-control-prev,
 .carousel-control-next {
   top: 50%;
-  margin-right: -5.5rem;
-  margin-left: -5.5rem;
+  margin-right: -6rem;
+  margin-left: -6rem;
   transform: translateY(-50%);
   text-decoration: none !important; }
 
