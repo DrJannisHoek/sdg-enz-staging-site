@@ -387,8 +387,8 @@ table thead th[aria-sort="ascending"] .fa-sort {
   display: none; }
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Arial", Helvetica, Open Sans, sans-serif;
+  font-size: 20px;
   color: #0b0c0c; }
 
 body.contrast-high {
@@ -1512,7 +1512,7 @@ body.contrast-high .previous-next-links .btn-primary span {
   clear: both;
   margin-bottom: 10px; }
   .publication .publication-title {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 7px !important; }
   .publication .publication-description p:last-child {
     margin-bottom: 0.5rem; }
@@ -1525,7 +1525,7 @@ body.contrast-high .previous-next-links .btn-primary span {
     padding: 0;
     margin: 0 0 10px 0; }
 #related_indicators .related-indicator-goal {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold; }
 
 #main-content .nav-tabs {
@@ -1596,7 +1596,7 @@ body.contrast-high #main-content .nav-tabs {
   .layout-goal .goal-page-target-number h3 {
     line-height: 1.5; }
   .layout-goal .goal-page-target-number .goal-target {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 0; }
 .layout-goal .goal-target {
   margin-top: 0; }
@@ -1611,10 +1611,10 @@ body.contrast-high #main-content .nav-tabs {
 .layout-goal .goal-page-indicator-number {
   min-width: 60px; }
   .layout-goal .goal-page-indicator-number h4 {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5; }
   .layout-goal .goal-page-indicator-number .indicator-number {
-    font-size: 16px; }
+    font-size: 20px; }
 .layout-goal .goal-page-indicator-progress {
   margin-left: 60px; }
 @media only screen and (min-width: 992px) {
@@ -1724,7 +1724,7 @@ body.contrast-high .indicator.goal-banner .goal-tiles img {
     border-radius: 4px;
     width: 40px;
     text-align: center;
-    font-size: 16px; }
+    font-size: 20px; }
     .layout-reportingstatus #main-content .statuses > div .status .status-inner {
       padding: 0 2px;
       border-radius: 5px; }
@@ -1800,7 +1800,7 @@ body.contrast-high .indicator.goal-banner .goal-tiles img {
   border-bottom: 1px solid #ccc; }
   .layout-reportingstatus #main-content .goal .total {
     line-height: 1.2;
-    font-size: 16px;
+    font-size: 20px;
     width: auto;
     padding-left: 4px;
     padding-right: 4px;
@@ -2148,7 +2148,7 @@ body.contrast-high.layout-config-builder .config-repository-button span {
             margin-top: 10px; }
         #main-content #map .disaggregation-controls .disaggregation-form-outer .disaggregation-form .disaggregation-label {
           display: block;
-          font-size: 16px; }
+          font-size: 20px; }
           #main-content #map .disaggregation-controls .disaggregation-form-outer .disaggregation-form .disaggregation-label .disaggregation-input {
             margin-right: 10px; }
         #main-content #map .disaggregation-controls .disaggregation-form-outer .disaggregation-form .disaggregation-form-buttons {
@@ -2157,7 +2157,7 @@ body.contrast-high.layout-config-builder .config-repository-button span {
           bottom: 10px; }
           #main-content #map .disaggregation-controls .disaggregation-form-outer .disaggregation-form .disaggregation-form-buttons button {
             margin-left: 10px;
-            font-size: 16px; }
+            font-size: 20px; }
   #main-content #map .leaflet-bottom.leaflet-right {
     z-index: 700; }
   @media only screen and (max-width: 480px) {
@@ -2444,7 +2444,7 @@ body.contrast-high.layout-data-editor .ag-root-wrapper, body.contrast-high.layou
         content: "";
         padding-right: 0; }
   .layout-news .post-listing .post-title {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 7px !important; }
   .layout-news .post-listing .post-date {
     float: left;
@@ -2585,7 +2585,7 @@ body.contrast-high.layout-data-editor .ag-root-wrapper, body.contrast-high.layou
         text-decoration: underline; }
     #search-results .search-result .url {
       color: green;
-      font-size: 16px; }
+      font-size: 20px; }
     #search-results .search-result .content {
       margin-top: 2px; }
 
@@ -2607,47 +2607,65 @@ body.contrast-high #search-bar-on-page button:hover {
 body.contrast-high.layout-search form input, body.contrast-high.layout-search form label {
   color: black; }
 
-#main-content .goal-tiles .goal-tile > a:focus {
-  outline: 0px transparent solid !important; }
+#main-content .goal-tiles {
+  padding-top: 1rem; }
+  #main-content .goal-tiles .goal-tile > a:focus {
+    outline: 0px transparent solid !important; }
 
 /*#0. header */
-/* a-tag style after clicked */
-/* header color bar beneath */
+/* replace original body setting --> hide by setting background transparent */
+body {
+  background: transparent;
+  padding-top: 0px; }
+
+/* header color bar --> hide by pushing over page-top boundary */
 #color-bar-background {
   background: white url("../img/sdgbg.png") top left repeat-x;
-  top: -15px;
-  height: 15px; }
+  top: 0px;
+  height: 9px; }
 
-/* replace original body setting */
-body {
-  background: white;
-  padding-top: -15px;
-  font-size: 14pt; }
+header {
+  display: block;
+  padding-bottom: 1rem;
+  top: 0px;
+  z-index: 3;
+  background-color: #248096;
+  background-image: url("../img/bg_site-header.png");
+  background-position: top -600px left -400px;
+  background-repeat: no-repeat; }
 
-/* page title */
-h1.header {
-  font-size: 20px;
-  margin-top: -5px;
-  margin-bottom: 0px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px; }
+#home {
+  position: relative;
+  max-width: 100%; }
+
+#enz-logo {
+  position: absolute;
+  right: -64%;
+  top: 44%;
+  max-width: 78%; }
 
 /*  ab hier von open-sdg*/
 .navbar-brand {
   width: calc(100% - 75px);
-  max-width: 80px;
-  margin-bottom: 5px;
+  max-width: 160px;
+  margin-bottom: 0px;
   padding: 0; }
   .navbar-brand img {
-    max-width: 100%;
+    max-width: 18%;
     text-decoration: none; }
   .navbar-brand:focus {
     background-color: transparent !important;
     outline: 7px solid transparent !important; }
 
+.navbar {
+  padding-top: .5rem;
+  padding-bottom: .5rem; }
+
 .navbar.navbar-nav.nav-item.nav-link {
   font-size: 15px; }
+
+.navbar .navbar-nav > .nav-item > .nav-link {
+  color: white; }
 
 /* search field*/
 #search-btn {
@@ -2734,6 +2752,31 @@ h1.header {
   padding-right: 0px !important;
   text-align: justify; }
 
+.lead-copy {
+  padding-top: 2rem; }
+
+p > img {
+  float: right;
+  width: 40%;
+  padding-left: 1.5em;
+  padding-bottom: 0.5em; }
+
+.frontpage-goals-grid .frontpage-goals-grid-title {
+  margin-top: 5rem;
+  margin-bottom: 14px; }
+
+.row.frontpage-card {
+  margin-top: 6rem; }
+
+#main-content .frontpage-card:before {
+  content: "";
+  background-color: #efeeeb;
+  position: absolute;
+  height: 100%;
+  width: 200vw;
+  left: -100vw;
+  z-index: -1; }
+
 /*#1. cards on landing page*/
 .col-md-4 {
   width: 32%;
@@ -2745,7 +2788,8 @@ h1.header {
   margin-top: 10px !important;
   margin-left: 0px !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
-  transition: 0.3s; }
+  transition: 0.3s;
+  background-color: white; }
 
 @media screen and (min-width: 450px) and (max-width: 992px) {
   .card.col-md-4 {
@@ -2801,7 +2845,7 @@ h1.header {
       color: black; }
   .goal-1.goal-title-by-goal {
     color: #E52B3D;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-1.indicator-title-by-indicator {
     color: #E52B3D;
@@ -2828,7 +2872,7 @@ h1.header {
       color: black; }
   .goal-2.goal-title-by-goal {
     color: #DDA63A;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-2.indicator-title-by-indicator {
     color: #DDA63A;
@@ -2855,7 +2899,7 @@ h1.header {
       color: black; }
   .goal-3.goal-title-by-goal {
     color: #4C9F38;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-3.indicator-title-by-indicator {
     color: #4C9F38;
@@ -2882,7 +2926,7 @@ h1.header {
       color: black; }
   .goal-4.goal-title-by-goal {
     color: #C42130;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-4.indicator-title-by-indicator {
     color: #C42130;
@@ -2909,7 +2953,7 @@ h1.header {
       color: black; }
   .goal-5.goal-title-by-goal {
     color: #FF3E24;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-5.indicator-title-by-indicator {
     color: #FF3E24;
@@ -2936,7 +2980,7 @@ h1.header {
       color: black; }
   .goal-6.goal-title-by-goal {
     color: #28BCE1;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-6.indicator-title-by-indicator {
     color: #28BCE1;
@@ -2963,7 +3007,7 @@ h1.header {
       color: black; }
   .goal-7.goal-title-by-goal {
     color: #FCC30B;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-7.indicator-title-by-indicator {
     color: #FCC30B;
@@ -2990,7 +3034,7 @@ h1.header {
       color: black; }
   .goal-8.goal-title-by-goal {
     color: #A21942;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-8.indicator-title-by-indicator {
     color: #A21942;
@@ -3017,7 +3061,7 @@ h1.header {
       color: black; }
   .goal-9.goal-title-by-goal {
     color: #FD6925;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-9.indicator-title-by-indicator {
     color: #FD6925;
@@ -3044,7 +3088,7 @@ h1.header {
       color: black; }
   .goal-10.goal-title-by-goal {
     color: #DD1367;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-10.indicator-title-by-indicator {
     color: #DD1367;
@@ -3071,7 +3115,7 @@ h1.header {
       color: black; }
   .goal-11.goal-title-by-goal {
     color: #FD9C27;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-11.indicator-title-by-indicator {
     color: #FD9C27;
@@ -3098,7 +3142,7 @@ h1.header {
       color: black; }
   .goal-12.goal-title-by-goal {
     color: #BF8B2E;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-12.indicator-title-by-indicator {
     color: #BF8B2E;
@@ -3125,7 +3169,7 @@ h1.header {
       color: black; }
   .goal-13.goal-title-by-goal {
     color: #417D46;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-13.indicator-title-by-indicator {
     color: #417D46;
@@ -3152,7 +3196,7 @@ h1.header {
       color: black; }
   .goal-14.goal-title-by-goal {
     color: #0A96D8;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-14.indicator-title-by-indicator {
     color: #0A96D8;
@@ -3179,7 +3223,7 @@ h1.header {
       color: black; }
   .goal-15.goal-title-by-goal {
     color: #57BE2F;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-15.indicator-title-by-indicator {
     color: #57BE2F;
@@ -3206,7 +3250,7 @@ h1.header {
       color: black; }
   .goal-16.goal-title-by-goal {
     color: #00689C;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-16.indicator-title-by-indicator {
     color: #00689C;
@@ -3233,7 +3277,7 @@ h1.header {
       color: black; }
   .goal-17.goal-title-by-goal {
     color: #1F4A6A;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 30px; }
   .goal-17.indicator-title-by-indicator {
     color: #1F4A6A;
@@ -3363,8 +3407,14 @@ body.contrast-high .goal-banner img {
   text-decoration: none !important; }
 
 /*#5. Footer*/
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat; }
+
 #footer-binder {
-  width: 13.5em;
+  width: 13em;
   height: 5.5em;
   margin-top: 4%;
   margin-bottom: 2%; }
@@ -3383,7 +3433,7 @@ body.contrast-high .goal-banner img {
   box-shadow: 0px 0px 0px 0px #0b0c0c !important; }
 
 #kooperation {
-  background-color: #19486a;
+  background-color: #248096;
   color: white;
   padding-top: 30px;
   padding-bottom: 15px;
