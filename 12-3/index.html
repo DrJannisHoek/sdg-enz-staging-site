@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230302020152">
+        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230302171549">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -166,36 +166,42 @@ layout-indicator
 </div>
 
 <header>
-    <div class="container">
+    <div class="container d-flex justify-content-between">
 
-        <div align="right">
+        <div>
+            <a class="navbar-brand" href="/sdg-enz-staging-site/" id="home" style="position:relative; top:0.7rem; bottom: 0.5rem;">
+                <img src="/sdg-enz-staging-site/assets/img/Mission_logo.png"
+                onmouseover="this.src='/sdg-enz-staging-site/assets/img/Mission_logo.png'"
+                onmouseout="this.src='/sdg-enz-staging-site/assets/img/Mission_logo.png'"/>
+            </a>
+        </div>
+        <div style="display: flex; flex-direction: column;">
             <nav class="navbar navbar-expand-lg navbar-light float-end" id="narbar-container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+                <div class="d-flex flex-wrap w-100 justify-contentt-end"  id="navigation-search-bar">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav" id="menu"><li class="nav-item ">
     <a class="nav-link" href="/sdg-enz-staging-site/goals">Ziele</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-enz-staging-site/about">Über uns</a>
+    <a class="nav-link" href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/">Über uns</a>
 </li></ul>
     
+                    </div>
                 </div>
             </nav>
+
+            <div>
+                <a class="navbar-brand" href="https://www.enzkreis.de/" id="enz-logo">
+                    <img src="/sdg-enz-staging-site/assets/img/Enzkreis_logo.png"
+                    onmouseover="this.src='/sdg-enz-staging-site/assets/img/Enzkreis_logo.png'"
+                    onmouseout="this.src='/sdg-enz-staging-site/assets/img/Enzkreis_logo.png'"/>
+                </a>
+            </div>
         </div>
-        <div style="position:relative; top:15%;">
-            <a class="navbar-brand" href="/sdg-enz-staging-site/" id="home">
-                <img src="/sdg-enz-staging-site/assets/img/Logo-MissionN_V3.png"
-                onmouseover="this.src='/sdg-enz-staging-site/assets/img/Logo-MissionN_V3.png'"
-                onmouseout="this.src='/sdg-enz-staging-site/assets/img/Logo-MissionN_V3.png'"/>
-            </a>
-            <a class="navbar-brand" href="https://www.enzkreis.de/" id="enz-logo">
-                <img src="/sdg-enz-staging-site/assets/img/enzkreis_logo.png"
-                onmouseover="this.src='/sdg-enz-staging-site/assets/img/enzkreis_logo.png'"
-                onmouseout="this.src='/sdg-enz-staging-site/assets/img/enzkreis_logo.png'"/>
-            </a>
-        </div>
+
     </div>
 </header>
 <div id="color-bar-background"  style="position: relative; top:0px;"> </div>
@@ -1182,7 +1188,7 @@ data-event-label="Change to Sources tab"
             </div>
             <div class="col-xs-3" id="footer-binder">
                 <div id="bilder" style="background-color:white;">
-                    <a href="https://www.enzkreis.de/" id="footer-binder-href" target="_blank" ><img src="/sdg-enz-staging-site/assets/img/enzkreis_logo.png" alt="enzkreis" id="footer-binder-image" class="img-responsive"></a>
+                    <a href="https://www.enzkreis.de/" id="footer-binder-href" target="_blank" ><img src="/sdg-enz-staging-site/assets/img/Enzkreis_logo_temp.png" alt="Enzkreis-logo temporary" id="footer-binder-image" class="img-responsive"></a>
                 </div>
             </div>
             <div class="col-xs-3" id="footer-binder">
@@ -1265,12 +1271,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230302020152'></script>
+<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230302171549'></script>
 
 
     
     
-    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230302020152"></script><script>
+    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230302171549"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
