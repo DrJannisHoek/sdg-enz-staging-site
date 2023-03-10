@@ -2748,7 +2748,7 @@ p > img {
     height: 414px; }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7); }
+  background-color: #7d7900; }
 
 .carousel-card-prev,
 .carousel-card-next {
