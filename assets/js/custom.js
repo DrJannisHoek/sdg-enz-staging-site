@@ -1,17 +1,46 @@
-// Add any custom javascript here.
-$('.carousel[data-type="multi"] .item').each(function() {
-	var next = $(this).next();
-	if (!next.length) {
-		next = $(this).siblings(':first');
-	}
-	next.children(':first-child').clone().appendTo($(this));
+// // Javascript for the lower navigation carousel --> scroll prev and next
+// source: https://www.codeply.com/p/0CWffz76Q9
+let items = document.querySelectorAll('#carouselLowerNavigation .carousel-item')
 
-	for (var i = 0; i < 2; i++) {
-		next = next.next();
-		if (!next.length) {
-			next = $(this).siblings(':first');
+items.forEach((el) => {
+	const minPerSlide = 4
+	let next = el.nextElementSibling
+	for (var i=1; i<minPerSlide; i++) {
+		if (!next) {
+			// wrap carousel by using first child
+			next = items[0]
 		}
-
-		next.children(':first-child').clone().appendTo($(this));
+		let cloneChild = next.cloneNode(true)
+		el.appendChild(cloneChild.children[0])
+		next = next.nextElementSibling
 	}
-});
+})
+
+
+// cards carousel on frontpage
+let width = screen.width;
+let cards = document.querySelectorAll('#carouselCard .carousel-item');
+let minSlide;
+
+// change number of cards per slide according to screen width
+if (width >= 1200) {
+	minSlide = 3;
+} else if (width >= 768 && width < 1200 ) {
+	minSlide = 2;
+} else {
+	minSlide = 1;
+}
+
+cards.forEach((cc) => {
+	let next = cc.nextElementSibling
+	for (var i=1; i<minSlide; i++) {
+		if (!next) {
+			// wrap carousel by using first child
+			next = cards[0]
+		}
+		let cloneChild = next.cloneNode(true)
+		cc.appendChild(cloneChild.children[0])
+		next = next.nextElementSibling
+	}
+})
+
