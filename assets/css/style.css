@@ -96,7 +96,7 @@ body.contrast-high {
 button:focus {
   color: #0b0c0c !important;
   outline: 3px solid transparent !important;
-  background-color: transparent !important;
+  background-color: #7d7900 !important;
   outline-offset: 0 !important;
   box-shadow: 0 -2px transparent, 0 4px #0b0c0c !important;
   text-decoration: none !important; }
@@ -167,7 +167,7 @@ body.contrast-high .variable-selector button.accessBtn:focus {
 input:focus {
   color: #0b0c0c !important;
   outline: 3px solid transparent !important;
-  background-color: transparent !important;
+  background-color: #7d7900 !important;
   outline-offset: 0 !important;
   box-shadow: 0 -2px transparent, 0 4px #0b0c0c !important;
   text-decoration: none !important; }
@@ -199,7 +199,7 @@ body.contrast-high input[type="search"]:focus {
 iframe:focus {
   color: #0b0c0c !important;
   outline: 3px solid transparent !important;
-  background-color: transparent !important;
+  background-color: #7d7900 !important;
   outline-offset: 0 !important;
   box-shadow: 0 -2px transparent, 0 4px #0b0c0c !important;
   text-decoration: none !important; }
@@ -212,7 +212,7 @@ body.contrast-high iframe:focus {
 [tabindex]:focus {
   color: #0b0c0c !important;
   outline: 3px solid transparent !important;
-  background-color: transparent !important;
+  background-color: #7d7900 !important;
   outline-offset: 0 !important;
   box-shadow: 0 -2px transparent, 0 4px #0b0c0c !important;
   text-decoration: none !important; }
@@ -267,7 +267,7 @@ body.contrast-high a:visited {
 [href]:focus {
   color: #0b0c0c !important;
   outline: 3px solid transparent !important;
-  background-color: transparent !important;
+  background-color: #7d7900 !important;
   outline-offset: 0 !important;
   box-shadow: 0 -2px transparent, 0 4px #0b0c0c !important;
   text-decoration: none !important; }
@@ -2314,7 +2314,7 @@ body.contrast-high #main-content #map .disaggregation-controls {
     background: #f0ad4e;
     color: #444444; }
 .klaro .cookie-modal .cm-modal .cm-list-input:focus + label .cm-switch .slider {
-  outline: 3px solid transparent;
+  outline: 3px solid #7d7900;
   box-shadow: 0 0 0 4px #0b0c0c; }
 .klaro .cookie-modal .cm-modal .cm-footer-buttons .cm-btn {
   border-radius: 0; }
@@ -2575,7 +2575,7 @@ body.contrast-high.layout-data-editor .ag-root-wrapper, body.contrast-high.layou
       #search-results .search-result a:focus .title {
         color: #0b0c0c !important;
         outline: 3px solid transparent !important;
-        background-color: transparent !important;
+        background-color: #7d7900 !important;
         outline-offset: 0 !important;
         box-shadow: 0 -2px transparent, 0 4px #0b0c0c !important;
         text-decoration: none !important; }
@@ -2606,9 +2606,6 @@ body.contrast-high #search-bar-on-page button:hover {
 
 body.contrast-high.layout-search form input, body.contrast-high.layout-search form label {
   color: black; }
-
-[href]:focus {
-  box-shadow: 0px 0px 0px 0px transparent !important; }
 
 h1 {
   font-size: 2.5rem;
@@ -2732,21 +2729,6 @@ header {
   .header-navigation-dropdown {
     display: none; } }
 @media screen and (max-width: 992px) {
-  .navbar .navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='	rgb(255,255,255)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    font-size: 0.8rem; }
-  .navbar .navbar-toggler {
-    border-color: white;
-    background-color: #248096;
-    margin-top: 0px; }
-  .navbar .navbar-toggler[aria-expanded="true"] {
-    background-color: #7d7900; }
-  .navbar .navbar-toggler:hover,
-  .navbar .navbar-toggler:focus {
-    border-color: white;
-    background-color: #7d7900;
-    box-shadow: 0px 0px 0px 0px transparent !important; }
-
   .header-navigation-dropdown .nav-item {
     background-color: #226c7e; }
   .header-navigation-dropdown .nav-item:hover {
@@ -2754,6 +2736,23 @@ header {
   .header-navigation-dropdown .navbar-nav .nav-link {
     color: white;
     padding-left: 1rem; } }
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='	rgb(255,255,255)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  font-size: 0.8rem; }
+.navbar .navbar-toggler {
+  border-color: white;
+  background-color: #248096;
+  margin-top: 0px; }
+.navbar .navbar-toggler:hover {
+  border-color: white;
+  background-color: #7d7900;
+  box-shadow: 0px 0px 0px 0px transparent !important; }
+.navbar .navbar-toggler:focus {
+  border-color: white;
+  box-shadow: 0px 0px 0px 0px transparent !important; }
+.navbar .navbar-toggler[aria-expanded="true"] {
+  background-color: #7d7900; }
+
 /* search field*/
 #search-btn {
   background-color: #eeeeee !important;
@@ -3563,6 +3562,9 @@ header {
 #toolbar {
   margin-top: 1.5rem !important; }
 
+button[role=tab]:focus {
+  background-color: transparent !important; }
+
 /*#4. goal-navigation-bottom */
 #contain {
   margin: auto;
@@ -3695,3 +3697,6 @@ h5 {
   h5 {
     text-align: center;
     padding-left: 0rem; } }
+[href]:focus {
+  box-shadow: 0px 0px 0px 0px transparent !important;
+  background-color: transparent !important; }
