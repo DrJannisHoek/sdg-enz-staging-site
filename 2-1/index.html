@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230317143403">
+        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230317144516">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -369,6 +369,19 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Der Indikator „Kinder mit Fehlernährung“ gibt den Anteil aller Kinder an, deren Body Mass Index [BMI] über oder unterhalb eines Schwellenwerts liegt. Dieser Schwellenwert wird bestimmt als der Wert, unter bzw. über dem 90 % aller Kinder desselben Geschlechts in der Altersgruppe in Deutschland liegen. Der BMI berechnet sich nach der Formel: Gewicht geteilt durch Körpergröße im Quadrat (kg/m²). <br />
+Der Indikator bildet ab, wieviel Prozent der Kinder aufgrund von Unter- oder Übergewicht ein erhöhtes Risiko für bestimmte Erkrankungen im Jugend- oder Erwachsenenalter haben. Die Ursache für ein Übergewicht liegt in einer Fehlernährung und ebenso in den Bewegungsgewohnheiten sowie in der Veranlagung. In Deutschland zeichnen sich neue Herausforderungen im Zusammenhang mit der Ernährungsweise ab, bspw. eine zunehmende Fettleibigkeit. Übergewicht kann das Risiko für spätere Folgeerkrankungen wie Bluthochdruck, Gefäßerkrankungen oder Diabetes mellitus Typ II erhöhen. <br />
+Für Kinder kann Übergewicht, vor allem starkes Übergewicht, eine Einschränkung in der sozialen Entwicklung bedeuten. Dagegen kann kindliches Untergewicht, das nicht mit altersgerecht unauffälligem Ernährungsverhalten und körperlicher Belastbarkeit einhergeht, gesundheitliche Probleme wie Infektanfälligkeit oder auch psychosoziale Schwierigkeiten hervorrufen. Die Daten werden im Rahmen der gesetzlich verpflichtenden Einschulungs-untersuchung erhoben, bei der jährlich ein gesamter Jahrgang von 4- bis 5-Jährigen untersucht wird. <br />
+<br />
+<strong>ENTWICKLUNG</strong> <br />
+<br />
+Grundsätzlich ist es das Ziel, den Anteil der Kinder- und Jugendlichen mit Fehlernährung (Über- oder Untergewicht) zu senken. Die Entwicklung der Kinder mit Fehlernährung ist im Enzkreis relativ stabil. Wie sich die Lock-Downs im Zuge der Coronapandemie der Jahre 2020 - 2022 mit Schließung von Schulen und (Sport-) Vereinen auf die Entwicklung auswirken werden, bleibt zunächst abzuwarten. Seit 2018 ist ein leichter Zuwachs der Kinder mit Übergewicht zu verzeichnen, der jedoch innerhalb der üblichen Schwankungen liegt.</p>
+
+  </div>
+</div>
+
 
     
 
@@ -384,13 +397,13 @@ layout-indicator
   data-measurementunit="Prozent"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="line"
+  data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;},{&quot;field&quot;:&quot;gruppe.gewicht&quot;,&quot;value&quot;:&quot;Untergewicht [%]&quot;},{&quot;field&quot;:&quot;gruppe.gewicht&quot;,&quot;value&quot;:&quot;Normalgewicht [%]&quot;},{&quot;field&quot;:&quot;gruppe.gewicht&quot;,&quot;value&quot;:&quot;Übergewicht [%]&quot;}]"
   data-graphlimits="null"
-  data-stackeddisaggregation=""
+  data-stackeddisaggregation="gruppe.gewicht"
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
@@ -803,19 +816,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Periodizität </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Jährlich</p>
 
           
         </td>
@@ -826,19 +832,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2010</p>
 
           
         </td>
@@ -854,7 +853,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Bertelsmann Stiftung / Wegweiser Kommune</p>
+            <p>Gesundheitsamt Enzkreis</p>
 
           
         </td>
@@ -1276,12 +1275,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230317143403'></script>
+<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230317144516'></script>
 
 
     
     
-    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230317143403"></script><script>
+    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230317144516"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
