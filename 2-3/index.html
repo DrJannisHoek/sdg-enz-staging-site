@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230317150433">
+        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230317151051">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -369,6 +369,19 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Stickstoffeinträge aus der Landwirtschaft in verschiedene Ökosysteme stellen nach wie vor ein ökologisches Problem dar. Der Stickstoffeintrag betrifft Oberflächengewässer, das Grundwasser, den Boden und die Luft und beeinflusst bei übermäßigem Eintrag die Widerstandsfähigkeit der Ökosysteme. Die Abnahme der Widerstandsfähigkeit gegenüber Klimaveränderungen und extremen Wetterereignissen ist eine Folge. <br />
+Der Stickstoffüberschuss wird über Modellrechnungen ermittelt. Der Düngemitteleinsatz, der Eintrag aus der Luft, die Entnahme durch Erträge und weitere Aspekte werden dabei berücksichtigt. Die Modellrechnungen werden durch das Institut für Ressourcenmanagement der Universität Gießen auf Kreisebene durchgeführt. <br />
+Die Höhe der Nitratkonzentration einer Fläche hängt maßgeblich von der Belastung durch die Landnutzung im Einzugsgebiet einer Messstelle ab. Darüber hinaus spielen die regionalen hydrogeologischen Bedingungen wie Grundwasserflurabstand und Fließgeschwindigkeit sowie die hydrochemischen Bedingungen im Untergrund eine wichtige Rolle. Das Ziel der Bundes- und der Landesregierung ist es, den Stickstoffüberschuss auf 70 kg/ha zu begrenzen. <br />
+<br />
+<strong>ENTWICKLUNG</strong> <br />
+<br />
+Der Stickstoffüberschuss aus der Landwirtschaft ist von der Art der Bewirtschaftung der landwirtschaftlichen Nutzfläche, aber auch von vielen weiteren Faktoren wie dem Wetter, der Bodenart oder Häufigkeit der Flächenbearbeitung abhängig. Durch eine ordnungsgemäße, den gesetzlichen Vorgaben entsprechende Landbewirtschaftung liegt der Stickstoffüberschuss aus der Landwirtschaft im Enzkreis über den gesamten Betrachtungszeitraum unterhalb des Landesdurchschnitts und unterhalb des Grenzwertes von 70 kg je ha landwirtschaftlicher Nutzfläche.</p>
+
+  </div>
+</div>
+
 
     
 
@@ -381,7 +394,7 @@ layout-indicator
   data-country="Land BW"
   data-charttitle="Stickstoffüberschuss aus der Landwirtschaft"
   data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-measurementunit="kg N/ha"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -776,7 +789,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Prozent</p>
+            <p>kg N/ha</p>
 
           
         </td>
@@ -803,19 +816,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Periodizität </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Jährlich</p>
 
           
         </td>
@@ -826,19 +832,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2010</p>
 
           
         </td>
@@ -854,7 +853,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Bertelsmann Stiftung / Wegweiser Kommune</p>
+            <p>Institut für Ressourcenmanagement der Universität Gießen, Umweltbundesamt</p>
 
           
         </td>
@@ -1276,12 +1275,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230317150433'></script>
+<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230317151051'></script>
 
 
     
     
-    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230317150433"></script><script>
+    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230317151051"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
