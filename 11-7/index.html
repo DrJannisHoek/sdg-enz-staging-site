@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230326165732">
+        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230326170908">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -369,6 +369,25 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Der Modal Split beschreibt die Verteilung des Transportaufkommens auf die unterschiedlichen Verkehrsmittel, i.d.R. Fußverkehr, Radverkehr, Öffentlicher Personennahverkehr (ÖPNV) und motorisierter Individualverkehr (MIV). Der Indikator vermittelt ein Bild vom Mobilitätsverhalten innerhalb der Kommune. Dabei sollen langfristig die Anteile des nicht-motorisierten Verkehrs (d. h. Fuß- und Radverkehr) und des öffentlichen Personennahverkehrs gesteigert werden, um die Nachhaltigkeit der Verkehrssysteme zu sichern. Die entsprechenden Werte können (wie im Enzkreis) über Bürgerbefragungen von jeder Kommune selbst erhoben werden. Nach Angaben des BMDV <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> verteilte sich das Mobilitätsverhalten im Bundesgebiet im Jahr 2019 wie folgt: Insgesamt 74 % der Strecken wurden mit dem motorisierten Individualverkehr (als Fahrerin oder Beifahrer) zurückgelegt. Insgesamt 6 % der personenbezogenen Verkehrsleistung entfällt auf den Luftverkehr. Demnach entfallen nur etwa 20 % der Verkehrsleistung auf den Umweltverbund (rund 3 % Fahrradverkehr, 3 % auf den Fußverkehr und 14 % auf den öffentlichen Verkehr, d.h. den schienen- und den straßengebundenen Personenverkehr). <br />
+<br />
+<strong>ENTWICKLUNG</strong> <br />
+<br />
+Die Anzahl zugelassener Pkw (siehe Indikator 11.6) äußert sich naturgemäß auch im Mobilitätsverhalten der Menschen im Enzkreis. Im Erhebungsjahr 2020 wurden 69 % der Wege als Fahrer/-in oder Beifahrer/-in des motorisierten Individualverkehrs (MIV) zurückgelegt. Der Anteil des öffentlichen Verkehrs (Bus und Bahn) lag bei 9 %. 17 % der Wegstrecken wurden zu Fuß und 6 % mit dem Fahrrad, Pedelec oder E-Bike zurückgelegt. Im Vergleich mit dem Modal Split in Baden-Württemberg wird deutlich, dass der MIV einen überproportional großen Anteil an der Verkehrslast des Enzkreises hat. Der Anteil der Verkehrslast im Umweltverbund und insbesondere im Fußverkehr ist im Enzkreis demnach deutlich geringer.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Bundesministerium für Verkehr und digitale Infrastruktur (Hrsg.): Verkehr in Zahlen 2021/2022, S. 224f. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+</div>
+
 
     
 
@@ -384,7 +403,7 @@ layout-indicator
   data-measurementunit="Prozent"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="line"
+  data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
@@ -854,7 +873,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Bertelsmann Stiftung / Wegweiser Kommune</p>
+            <p>Haushaltsbefragung im Enzkreis 2020; Erhebung durch externen Dienstleister (LK Argus), infas (2022); Mobilitätsreport Baden-Württemberg 06, Ausgabe 12/2022.</p>
 
           
         </td>
@@ -1278,12 +1297,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230326165732'></script>
+<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230326170908'></script>
 
 
     
     
-    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230326165732"></script><script>
+    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230326170908"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
