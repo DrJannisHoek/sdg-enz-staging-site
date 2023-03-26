@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230326174508">
+        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230326174859">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -369,6 +369,17 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Der Indikator wird herangezogen, um die Entwicklung der nachhaltigen Mobilität im Verwaltungsfuhrpark des Enzkreises abzubilden. Dabei wird einerseits der Anteil von Fahrzeugen mit nachhaltigen Antriebstechniken erhoben und andererseits der Anteil der tatsächlich gefahrenen Distanzen mit diesen Fahrzeugen. Die Umstellung auf Fahrzeuge mit reinem Elektromotor, Plug-In-Hybrid- Motoren oder mit Wasserstoff betriebenen Fahrzeugen ist ein Beitrag auf dem Weg zur klimaneutralen Verwaltung bis zum Jahr 2040 und zudem eine Maßnahme der Bewusstseinsbildung im Enzkreis. <br />
+<br />
+<strong>ENTWICKLUNG</strong> <br />
+<br />
+Der Fuhrpark des Landratsamtes wird bereits seit 2012 sukzessive von Verbrennungsmotoren auf nachhaltige Antriebstechniken umgestellt. Während alternative Antriebstechniken bis zum Jahr 2016 noch die Ausnahme bildeten, verfügen zunehmend mehr Fahrzeuge über reine Elektromotoren oder Plug-In Hybridmotoren, die mit Strom aus erneuerbaren Quellen betankt werden. Batteriekapazität und Reichweite der reinen Elektroautos sind für die Dienstfahrten im täglichen Gebrauch ausreichend. Vor allem konventionelle Dienstfahrten im Außendienst können rein elektrisch zurückgelegt werden. In anderen Bereichen, bspw. der Straßenmeisterei sind dieselbetriebene Fahrzeuge aktuell noch Standard. Erste Erfahrungen mit einem wasserstoffbetriebenen Dienstwagen werden seit dem Jahr 2021 gesammelt.</p>
+
+  </div>
+</div>
+
 
     
 
@@ -378,7 +389,7 @@ layout-indicator
   id="indicatorData"
   data-indicatorid='indicator_12-6'
   data-id="12-6"
-  data-country="Land BW"
+  data-country="Enzkreis"
   data-charttitle="Nachhaltige Antriebstechniken im Verwaltungsfuhrpark"
   data-charttitles="null"
   data-measurementunit="Prozent"
@@ -388,7 +399,7 @@ layout-indicator
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;}]"
+  data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -539,7 +550,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -611,7 +622,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -792,7 +803,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p>Land BW</p>
+            <p>Enzkreis</p>
 
           
         </td>
@@ -826,19 +837,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2016</p>
 
           
         </td>
@@ -854,7 +858,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Bertelsmann Stiftung / Wegweiser Kommune</p>
+            <p>Amt für technische Dienste des Enzkreises</p>
 
           
         </td>
@@ -1278,12 +1282,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230326174508'></script>
+<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230326174859'></script>
 
 
     
     
-    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230326174508"></script><script>
+    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230326174859"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
