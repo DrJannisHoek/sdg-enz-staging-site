@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230326180455">
+        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230326181448">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -369,6 +369,17 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Um den anthropogenen Klimawandel auf ein Mindestmaß zu reduzieren, müssen die CO2-Emissionen reduziert werden. Dafür werden weltweit, auf nationaler und kommunaler Ebene Ziele und Handlungsfelder identifiziert und Maßnahmen zur Reduzierung der Treibhausgas-Emissionen umgesetzt. Das Land Baden-Württemberg nimmt sich seiner besonderen Verantwortung mit dem landeseigenen Klimaschutzgesetz an, das verbindliche Vorgaben für die Reduzierung von Treibhausgasen festlegt. Der Enzkreis hat sich bereits 2010 unter dem Motto „Enzkreis-Klima-Wendekreis“ auf den Weg gemacht, seinen Beitrag zum Klimaschutz und zur Energiewende zu leisten. CO2 soll wo möglich vermieden, vermindert oder ausgeglichen (kompensiert) werden. Mit seinen Zielsetzungen und dem Klimaschutzkonzept orientiert sich der Landkreis an den CO2-Einsparzielen der Landesregierung. Bis zum Jahr 2030 soll eine Reduktion der CO2-Emissionen um 65 % gegenüber 1990 erfolgen. Das kommunale Klimaschutzmanagement des Enzkreises koordiniert alle Aktivitäten rund um den Klimaschutz im Schulterschluss mit der Klimaschutz- und Energieagentur Pforzheim Enzkreis (keep). Die keep versteht sich als Dienststelle für Fragen zum Klimaschutz, zur Klimaanpassung und zur Energieeffizienz für die Kommunen im Enzkreis und der Stadt Pforzheim. <br />
+<br />
+<strong>ENTWICKLUNG</strong> <br />
+<br />
+Die CO2-Emissionen im Enzkreis unterliegen im Betrachtungszeitraum Schwankungen. Konnten sie in den Jahren 2012 bis 2015 zunächst gesenkt werden, stiegen sie in den Folgejahren wieder an. Zum Jahr 2019 sanken die absoluten Emissionen im Landkreis erneut. Innerhalb der bilanzierten Sektoren gibt es dabei Unterschiede: Die CO2-Emissionen der Privathaushalte sind im Trend (mit Schwankungen) insgesamt rückläufig, während der CO2-Ausstoß im Verkehrssektor insgesamt anstieg und im Jahr 2019 mit 35 % den größten Anteil darstellt (Privathaushalte im selben Jahr 33 %). Die Industrie ist für 24 % der CO2- Emissionen verantwortlich, Gewerbe und sonstiges hatten (2019) mit 8 % den kleinsten Anteil an den CO2-Emissionen.</p>
+
+  </div>
+</div>
+
 
     
 
@@ -378,13 +389,13 @@ layout-indicator
   id="indicatorData"
   data-indicatorid='indicator_13-2'
   data-id="13-2"
-  data-country="Land BW"
+  data-country="Enzkreis"
   data-charttitle="Treibhausgasemissionen – Enzkreis (Landkreis)"
   data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-measurementunit="CO2-Emissionen [t]"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="line"
+  data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
@@ -539,7 +550,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -611,7 +622,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -776,7 +787,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Prozent</p>
+            <p>CO2-Emissionen [t]</p>
 
           
         </td>
@@ -792,7 +803,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p>Land BW</p>
+            <p>Enzkreis</p>
 
           
         </td>
@@ -826,19 +837,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2012</p>
 
           
         </td>
@@ -854,7 +858,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Bertelsmann Stiftung / Wegweiser Kommune</p>
+            <p>Erhebung mit BICO2BW durch ext. Dienstleister (ES Konzepte)</p>
 
           
         </td>
@@ -1278,12 +1282,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230326180455'></script>
+<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230326181448'></script>
 
 
     
     
-    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230326180455"></script><script>
+    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230326181448"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
