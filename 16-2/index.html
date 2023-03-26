@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230326215055">
+        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230326215501">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -369,6 +369,17 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Der Indikator bilanziert die über die letzten vier Jahre gemittelten Steuereinnahmen der kreisangehörigen Städte und Gemeinden je Einwohner/in. Die Summe der Einzahlungen aus den Grundsteuern A und B, der Gewerbesteuer, dem Gemeindeanteil an der Einkommenssteuer und an der Umsatzsteuer bezeichnet das mit den lokalen Realsteuerhebesätzen realisierte Steuerpotenzial der Gemeinden. Die Steuereinnahmen prägen dabei den finanziellen Handlungsspielraum der Kommunen. Von den Gewerbesteuereinnahmen müssen die Gemeinden jedoch die Gewerbesteuerumlage an den Bund und die Länder abführen. Die Finanzierung von Kreisen stellt sich anders dar, da die Realsteuern (Grundsteuer A und B, Gewerbesteuer) den Gemeinden zustehen. Zur Deckung des Finanzbedarfs können Landkreise eine Umlage von den kreisangehörigen Städten- und Gemeinden erheben. Sie berechnet sich aus deren Steuerkraft. Von dieser Umlagegrundlage wird ein bestimmter Prozentsatz als Kreisumlage definiert. Der Indikator zeigt demnach lediglich das Steuerpotenzial an und entfaltet seine Aussagekraft insbesondere im Vergleich mit anderen Kommunen sowie als Ausdruck der wirtschaftlichen Prosperität im Landkreis. <br />
+<br />
+<strong>ENTWICKLUNG</strong> <br />
+<br />
+Das realisierte Steuerpotenzial je Einwohner/-in steigt im Enzkreis wie auch im Land Baden-Württemberg über den gesamten Betrachtungszeitraum bis zum Jahr 2019. Im Jahr 2020 stagnierte es aufgrund der Auswirkungen der Coronapandemie. Der Indikator bilanziert indirekt die Wirtschaftskraft der Gebietskörperschaften. Im Vergleich mit dem Land Baden-Württemberg wird deutlich, dass das realisierte Steuerpotenzial im Enzkreis, entsprechend der Wirtschafts- und Einkommensstruktur regelmäßig etwa 200 bis 260 Euro unter dem Landesdurchschnitt liegt.</p>
+
+  </div>
+</div>
+
 
     
 
@@ -381,7 +392,7 @@ layout-indicator
   data-country="Land BW"
   data-charttitle="Realisiertes Steuerpotenzial je Einwohner"
   data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-measurementunit="€/EW"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -776,7 +787,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Prozent</p>
+            <p>€/EW</p>
 
           
         </td>
@@ -826,19 +837,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2013</p>
 
           
         </td>
@@ -1278,12 +1282,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230326215055'></script>
+<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230326215501'></script>
 
 
     
     
-    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230326215055"></script><script>
+    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230326215501"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
