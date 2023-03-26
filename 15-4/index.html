@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230326214404">
+        <link rel="stylesheet" href="/sdg-enz-staging-site/assets/css/style.css?v=20230326214746">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -369,6 +369,18 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Die Sicherung der biologischen Vielfalt erfordert ausreichend große Flächen, auf denen sich die Natur ohne belastende Eingriffe des Menschen entfalten kann. Somit stellt die Ausweisung von Schutzgebieten eines der wichtigsten Instrumente zum Schutz von Ökosystemen dar. Der Indikator bilanziert den Flächenanteil der rechtsverbindlich ausgewiesenen Naturschutzflächen. Die einzelnen Schutzgebietskategorien unterscheiden sich je nach Zweck und juristischer Grundlage. Naturschutzgebiete und Nationalparks gehören zu den am strengsten geschützten Flächen in Deutschland. Zwar liegt der Enzkreis in der Nähe des Nationalparks Schwarzwald, jedoch schneidet diese Schutzgebietskategorie nicht die Fläche des Landkreises.<br />
+Obwohl der Anteil der rechtverbindlich ausgewiesenen Naturschutzflächen in Deutschland insgesamt stetig zunimmt, sind die meisten Gebiete jedoch relativ klein, wodurch sie anfälliger für menschliche Einflüsse sind. Daher kommt einem zusammenhängenden und länderübergreifenden Netz von Schutzgebieten eine besondere Bedeutung zu. Naturschutzflächen können unter bestimmten Auflagen zudem Erholungsgebiete für Menschen und oft ein wichtiger Standortfaktor für ansonsten relativ strukturschwache Regionen sein. Ein zunehmender oder stabiler Anteil rechtsverbindlich ausgewiesener Naturschutzflächen kann als positiv im Sinne einer nachhaltigen Entwicklung erachtet werden. <br />
+<br />
+<strong>ENTWICKLUNG</strong> <br />
+<br />
+Entsprechend der Schutzgebietsstatistik der Landesanstalt für Umwelt Baden-Württemberg (LUBW) haben Naturparks im Enzkreis einen gesamten Flächenanteil von 47 %, Landschaftsschutzgebiete einen Anteil von 21 % und Flora- Fauna-Habitat-Gebiete (FFH) einen Anteil von 18 %. Vogelschutz-Gebiete (SPA) (4 %) und Naturschutzgebiete (3 %) haben deutlich geringere Flächenanteile. Die Schutzgebietskategorien können sich dabei räumlich überschneiden.</p>
+
+  </div>
+</div>
+
 
     
 
@@ -378,13 +390,13 @@ layout-indicator
   id="indicatorData"
   data-indicatorid='indicator_15-4'
   data-id="15-4"
-  data-country="Land BW"
+  data-country="Enzkreis"
   data-charttitle="Naturschutzflächen"
   data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-measurementunit="Flächenanteil [%]"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="line"
+  data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
@@ -539,7 +551,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -611,7 +623,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -776,7 +788,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Prozent</p>
+            <p>Flächenanteil [%]</p>
 
           
         </td>
@@ -792,7 +804,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p>Land BW</p>
+            <p>Enzkreis</p>
 
           
         </td>
@@ -826,19 +838,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2022</p>
 
           
         </td>
@@ -854,7 +859,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Bertelsmann Stiftung / Wegweiser Kommune</p>
+            <p>Schutzgebietsstatistik der LUBW</p>
 
           
         </td>
@@ -1278,12 +1283,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230326214404'></script>
+<script src='/sdg-enz-staging-site/assets/js/sdg.js?v=20230326214746'></script>
 
 
     
     
-    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230326214404"></script><script>
+    <script src="/sdg-enz-staging-site/assets/js/custom.js?v=20230326214746"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
