@@ -15,10 +15,10 @@ country: # or place name
   name: Enzkreis
   adjective: Enzkreis
 
-email_contacts:
-  questions: nachhaltigkeit@ba-tk.berlin.de
-  suggestions: nachhaltigkeit@ba-tk.berlin.de
-  functional: nachhaltigkeit@ba-tk.berlin.de
+# email_contacts:
+#   questions: nachhaltigkeit@ba-tk.berlin.de
+#   suggestions: nachhaltigkeit@ba-tk.berlin.de
+#   functional: nachhaltigkeit@ba-tk.berlin.de
 
 frontpage_introduction_banner:
  title: frontpage.intro_title
@@ -149,6 +149,10 @@ menu:
   - path: "https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/"
     translation_key: menu.about
 
+metadata_tabs:
+  - scope: national
+    title: Metadaten
+    description: indicator.national_metadata_blurb
 
 plugins:
   - jekyll-remote-theme
