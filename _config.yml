@@ -113,7 +113,8 @@ footer_menu:
 #   - include: components/card.html
 
 goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
-graph_color_set: accessible
+graph_color_set: 'custom'
+graph_color_list: ['fde55c', '81ceea','fc9b29','02aef0','f07002','0275f0','e44501','010984','ae1901', '010326']
 header_language_toggle: dropdown
 
 # map_options:
