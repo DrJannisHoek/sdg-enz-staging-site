@@ -100,7 +100,7 @@ frontpage_cards:
 
 goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 graph_color_set: 'custom'
-graph_color_list: ['81ceea','fde55c','02aef0','fc9b29','0275f0','f07002','010984','e44501','010326''ae1901']
+graph_color_list: ['81ceea','fde55c','02aef0','fc9b29','0275f0','f07002','010984','e44501','010326','ae1901']
 header_language_toggle: dropdown
 
 languages:
