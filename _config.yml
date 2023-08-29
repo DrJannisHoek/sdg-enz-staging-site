@@ -93,14 +93,14 @@ frontpage_cards:
   - title: Prodcast "Transfer für die Ohren", Episode 1 (Transferagentur Bayern, Regionalbüro Süd):<br>Interview mit Dr. Jannis Hoek
     href: "https://open.spotify.com/episode/4hOCv6rGi0TDbJE5lUSOyW?si=6d16592196ce4000"
     thumbnail_src: /thumbnail_podcast.jpg
-  - title: Indikatorenbericht 2023 (Downloadlink folgt nach Veröffentlichung)
+  - title: Indikatorenbericht 2023
     href: "https://www.enzkreis.de/output/download.php?fid=3397.3926.1.PDF"
     thumbnail_src: /thumbnail_indikatorenbericht2023.png
 
 
 goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 graph_color_set: 'custom'
-graph_color_list: ['81ceea','fde55c','02aef0','fc9b29','0275f0','f07002','010984','e44501','010326''ae1901']
+graph_color_list: ['81ceea','fde55c','02aef0','fc9b29','0275f0','f07002','010984','e44501','010326','ae1901']
 header_language_toggle: dropdown
 
 languages:
