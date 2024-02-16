@@ -12,10 +12,10 @@ jobs:
     - name: Set up Ruby 2.6
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.6' -v 2.4.22
+        ruby-version: '2.6'
     - name: Build the site
       run: |
-        gem install bundler
+        gem install bundler -v 2.4.22
         bundle config path vendor/bundle
         bundle install
         bundle exec jekyll build
